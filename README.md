@@ -50,15 +50,15 @@ Access the application via http://localhost/website-for-a-gym/index.php.
 
 ## 📁 Project Structure
 website-for-a-gym/
-├── Database/           # SQL files for database setup
-├── Images/             # Images used in the website
-├── PHPs/               # PHP scripts for backend functionalities
-├── Script/             # JavaScript files
-├── Styles/             # CSS files for styling
-├── contact.php         # Contact form page
-├── index.php           # Home page
-├── login.php           # User login page
-├── readmore.php        # Detailed information page
-├── signup.php          # User registration page
-├── user.php            # User dashboard
-└── README.md           # Project documentation
+├── assets/
+│   ├── css/              # Stylesheets
+│   ├── js/               # Scripts
+│   └── images/           # Image files
+│
+├── includes/             # PHP includes and database config
+├── pages/                # Sub-pages (login, signup, contact)
+├── sql/                  # Database schema files
+├── index.php             # Homepage
+└── README.md             # Project description
+
+
