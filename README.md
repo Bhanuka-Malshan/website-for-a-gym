@@ -34,31 +34,32 @@ A comprehensive web application designed for gym and fitness centers. This platf
 - MySQL database
 - Browser (e.g., Chrome, Firefox)
 
-Set up the database:
+## Set up the database:
 
-Import the provided SQL file located in the Database folder into your MySQL server.
+- Import the provided SQL file located in the Database folder into your MySQL server.
 
-Configure database connection:
+- Configure database connection:
 
-Open config.php and update the database credentials accordingly.
+- Open config.php and update the database credentials accordingly.
 
-Run the application:
+## Run the application:
 
-Place the project folder in your web server's root directory (e.g., htdocs for XAMPP).
+- Place the project folder in your web server's root directory (e.g., htdocs for XAMPP).
 
-Access the application via http://localhost/website-for-a-gym/index.php.
+- Access the application via http://localhost/website-for-a-gym/index.php.
 
 ## 📁 Project Structure
 website-for-a-gym/
-├── assets/
-│   ├── css/              # Stylesheets
-│   ├── js/               # Scripts
-│   └── images/           # Image files
-│
-├── includes/             # PHP includes and database config
-├── pages/                # Sub-pages (login, signup, contact)
-├── sql/                  # Database schema files
-├── index.php             # Homepage
-└── README.md             # Project description
-
+- ├── Database/           # SQL files for database setup
+- ├── Images/             # Images used in the website
+- ├── PHPs/               # PHP scripts for backend functionalities
+- ├── Script/             # JavaScript files
+- ├── Styles/             # CSS files for styling
+- ├── contact.php         # Contact form page
+- ├── index.php           # Home page
+- ├── login.php           # User login page
+- ├── readmore.php        # Detailed information page
+- ├── signup.php          # User registration page
+- ├── user.php            # User dashboard
+- └── README.md           # Project documentation
 
