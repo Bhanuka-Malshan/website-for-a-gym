@@ -1,0 +1,757 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+:root{
+    --main-color: #047491;
+    --black:#13131a;
+    --bg:#010103;
+    --boder:.1rem solid rgba(255, 255, 255, .3);
+    }
+
+*{
+    font-family: 'Roboto',sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+/* header section starts */
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(../Images/background_main-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .7rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size: 6rem;   
+    text-transform: uppercase;
+    color: #fff;  
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #eee;
+}
+
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+    padding-top: 0.5rem;
+    font-size: 4rem;
+
+}
+
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+/* header section ends */
+
+/* about section starts */
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex: 1 1 45rem; 
+}
+
+.about .row .image img{
+    width: 100%; 
+}
+
+.about .row .content{
+    flex: 1 1 45rem; 
+    padding: 2rem;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+/* about section ends */
+
+/* service section starts */
+
+.item{
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    align-items: stretch;  
+    cursor: pointer;  
+}
+
+.item:hover{
+    font-size: 5rem;
+       
+}
+
+.item h2{
+    font-size: 2rem;
+    line-height: 1.8;
+    padding: .2rem;
+}
+
+.item p{
+    font-size: 1.4rem;
+    line-height: 1.8;
+    padding: .2rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,200px);
+    grid-gap: 3rem;
+    justify-content: center;   
+}
+
+/* service section ends */
+
+/* BMI section starts */
+
+.BMI{
+    padding-top: 5rem;
+}
+
+.BMI .row{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+
+.BMI .row .image{
+    flex: 1 1 45rem; 
+}
+
+.BMI .row .image img{
+    width: 100%; 
+    align-content: flex-end;
+}
+
+.BMI .row .content{
+    flex: 1 1 45rem; 
+    padding: 2rem;
+}
+
+.BMI .row .content h3{
+    font-size: 3rem;   
+    text-transform: uppercase;
+    color: #fff; 
+    padding-bottom: 2rem; 
+}
+
+.BMI .row .content p{
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+    padding-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+            /* BMI Pop Up */
+
+
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+  
+}
+
+.popup .content{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: rgb(255, 255, 255);
+    /* width: 800px;
+    height: 620px; */
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+   
+}
+
+.popup .closebtn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content{
+    margin-top: 3rem;
+    justify-content: center;
+    position: fixed;
+    border-radius: 20px;
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.BMI .row button{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .7rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+
+.popup.active .content .box2 h1{
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px;
+}
+
+.popup.active .content .box2 .content2{
+    padding: 0 40px;
+}
+
+.popup.active .content .box2.content2 .input{
+    background: #fff;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.popup.active .content .box2 .input label{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-transform: none;
+}
+
+.popup.active .content .box2 .content2 .input input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #70afe9;
+    width: 60%;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Nunito' , sans-serif;
+}
+
+.popup.active .content .box2 .content2 button#calculate{
+    margin-top: 3rem;;
+    display: inline-block;
+    padding: .7rem 2rem;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.popup.active .content .box2 .content2 button#calculate:hover{
+    letter-spacing: .15rem;  
+}
+
+.popup.active .content .box2 .results{
+    font-size: 3rem;
+}
+
+.popup.active .content .box2 .results p{
+    text-transform: none;
+    color: #000;
+    font-size: 3rem ;
+    display: block;
+    line-height: 4rem;
+}
+
+.popup.active .content .box2 .results #results{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #047491;
+    background-color: #ddd;
+    display: inline-block;
+    padding: 7px 40px;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    margin-top: -3rem;
+}
+
+.popup.active .content .box2 .results #comment{
+    color: rgb(170, 16, 16);
+}
+
+.popup.active .content .box2 .results #comment{
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+
+                /* BMI Pop Up */
+
+
+
+/* BMI section ends */
+
+/* trainers section starts */
+
+.trainers{
+    display: flex;
+    justify-content: center;
+    background: var(--black);
+    flex-wrap: wrap;
+    flex: 1 1 45rem; 
+}
+
+.trainer{
+    padding: 2rem;
+    align-items: center;
+}
+
+.trainer .content{
+    color: #fff;
+    margin-left: 1.1rem;
+}
+
+.trainer h3{
+    padding-top: .5rem;
+    font-size: 2rem;
+}
+
+.trainer p{
+    font-size: 1.5rem;
+    padding-top: .5rem;
+}
+
+/* trainers section ends */
+
+/* pricing section starts */
+
+.price .grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.price .grid .box{
+    width: 330px;
+    height: 500px;
+    border: var(--boder);
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px 5px rgba(89, 146, 231, 0.3);
+}
+
+.price .grid .box .title{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+    color: var(--bg);
+}
+
+.price .grid .box img{
+   
+    width: 90px;
+    height: 90px;
+}
+
+.price .grid .box .price b{
+    display: block;
+    font-size: 4rem;
+    margin-bottom: .2rem;
+}
+
+.price .grid .box .price span{
+    font-size: 2rem;
+    text-transform: lowercase;
+    padding-bottom: 4rem;
+}
+
+.price .grid .box .content{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    text-align: left;
+}
+.price .grid .box .content h2{
+    padding: 8px 0px;
+    border-bottom: 1px solid black;
+    font-weight: 350;
+}
+
+.price .grid .box h2 span{
+    color: #047491;
+}
+
+.price .grid .box.all {
+    transform: scale(1.1);
+    background: #047491;
+    margin: 2rem;   
+}
+
+.price .grid .box .content h2{
+    font-weight: bolder;
+}
+
+.price .grid .box.all h2 span{
+    color: rgba(255, 255, 255, 0.596);
+}
+
+.price .grid .box .buttn {
+    display: inline-block;
+    padding: .5rem 2rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    color:var(--main-color);
+    background: rgb(255, 255, 255);
+    cursor: pointer;}
+
+.price .grid .box .buttn:hover {
+        letter-spacing: .2rem;
+}
+
+/* pricing section ends */
+
+/* contact section starts */
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact .row .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+    padding: 2rem;
+}
+
+.contact .row form{
+    flex: 1  45rem;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 3rem;
+    margin-top: -3rem;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    background: var(--bg);
+    border: var(--boder);
+    width: 700px;
+}
+
+.contact .row form .inputBox3{
+    display: flex;
+    align-items: center;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    background: var(--bg);
+    border: var(--boder);
+    width: 700px;
+    height: 130px;
+}
+
+.contact .row form .inputBox3 textarea{
+    position: relative;
+    background-color: var(--bg);
+    font-size: 17px;
+    color: #ffffff;
+    margin-left: 17px;
+    margin-top: 10px;    
+}
+
+.contact .row form .inputBox span{
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 1.5rem;
+}
+
+.contact .row form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
+}
+
+
+
+.contact .row form .inputBox3 span{
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 1.5rem;
+    margin-bottom: 7rem;
+    
+}
+
+.contact .row form .inputBox3 input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
+    margin-bottom: 5rem;
+}
+
+/* contact section ends */
+
+/* footer section starts */
+
+.footer{
+    background: #1b1b1f38;
+    text-align: center;
+}
+
+.footer .share{
+    padding: 1rem;
+}
+
+.footer .share a{
+    background-color: var(--bg);
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--boder);
+    margin: .3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover{
+    background-color: var(--main-color);
+    color: var(--bg);
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .links a{
+    padding: .7rem 2rem;
+    color: #fff;
+    border: var(--boder);
+    font-size: 1.5rem;
+    background-color: var(--bg);
+}
+
+.footer .links a:hover{
+    font-size: 1.6rem;
+    background-color: var(--main-color);
+}
+
+.footer .credit{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+.footer .credit span{
+    color: var(--main-color);
+    font-weight: bolder;
+}
+
+/* footer section ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:860px){
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+    
+    .about{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .row .content p{
+        font-size: 1.5rem;
+    }
+
+
+    .BMI{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(9,200px);
+    justify-content: center; 
+    
+}
+
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 60vh;
+    height: 620px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+   
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

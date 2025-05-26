@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+:root{
+    --main-color: #047491;
+    --black:#13131a;
+    --bg:#010103;
+    --boder:.1rem solid rgba(255, 255, 255, .3);
+    }
+
+*{
+    font-family: 'Roboto',sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+/* header section starts */
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(../Images/rmbg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .7rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+    padding-top: 0.5rem;
+    font-size: 4rem;
+
+}
+
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+
+
+/* about section starts */
+
+.about .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: var(--bg);
+}
+
+.about .row .image{
+    flex: 1 1 45rem; 
+}
+
+.about .row .image img{
+    width: 100%; 
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+/* about section ends */
+
+/* trainers section starts */
+
+.trainers{
+    display: flex;
+    justify-content: center;
+    background: var(--bg);
+    flex-wrap: wrap;
+    flex: 1 1 45rem; 
+}
+
+.trainer{
+    padding: 2rem;
+    align-items: center;
+}
+
+.trainer .content{
+    color: #fff;
+    margin-left: 1.1rem;
+}
+
+.trainer h3{
+    padding-top: .5rem;
+    font-size: 2rem;
+}
+
+.trainer p{
+    font-size: 1.5rem;
+    padding-top: .5rem;
+}
+
+/* trainers section ends */
+
+/* culture section starts */
+
+
+
+
+/* culture section ends */
+
+.culture .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: var(--bg);
+}
+
+.culture .row .content p{
+    justify-items: center;
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+/* footer section starts */
+
+.footer{
+    background: #1b1b1f38;
+    text-align: center;
+}
+
+.footer .share{
+    padding: 1rem;
+}
+
+.footer .share a{
+    background-color: var(--bg);
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--boder);
+    margin: .3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover{
+    background-color: var(--main-color);
+    color: var(--bg);
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .links a{
+    padding: .7rem 2rem;
+    color: #fff;
+    border: var(--boder);
+    font-size: 1.5rem;
+    background-color: var(--bg);
+}
+
+.footer .links a:hover{
+    font-size: 1.6rem;
+    background-color: var(--main-color);
+}
+
+.footer .credit{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+.footer .credit span{
+    color: var(--main-color);
+    font-weight: bolder;
+}
+
+/* footer section ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:860px){
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+    
+    .about{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .row .content p{
+        font-size: 1.5rem;
+    }
+
+
+    .BMI{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(9,200px);
+    justify-content: center; 
+    
+}
+
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 60vh;
+    height: 620px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+   
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

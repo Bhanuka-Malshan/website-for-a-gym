@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --main-color: #047491;
+    --black:#13131a;
+    --bg:#010103;
+    --boder:.1rem solid rgba(255, 255, 255, .3);
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--black);
+    background:url(../Images/login-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+.boxx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 12rem;
+  }
+  
+  .name {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .welcome {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .welcome span {
+    font-size: 3rem;
+    color: rgb(0, 255, 0);
+    margin-bottom: 20px;
+  }
+  
+  .box2 {
+    margin-top: 2rem;
+    width: 300px;
+    background: #0475917c;
+    text-align: center;
+    padding: 2rem;
+    align-items: center;
+    border-radius: 30px 10px;
+  }
+  
+  .box2 p{
+    align-items: center;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  .box2 p span{
+    font-size: 3rem;
+    font-weight: 400;
+    color: rgb(161, 160, 160);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer section starts */
+
+
+.footer{
+    text-align: center;
+}
+
+.footer .share{
+    padding: 1rem;
+}
+
+.footer .share a{
+    background-color: var(--bg);
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--boder);
+    margin: .3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover{
+    background-color: var(--main-color);
+    color: var(--bg);
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+.footer .links a{
+    padding: .7rem 2rem;
+    color: #fff;
+    border: var(--boder);
+    font-size: 1.5rem;
+    background-color: var(--bg);
+}
+
+.footer .links a:hover{
+    font-size: 1.6rem;
+    background-color: var(--main-color);
+}
+
+.footer .credit{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+.footer .credit span{
+    color: var(--main-color);
+    font-weight: bolder;
+} 
+/* footer section ends*/
+

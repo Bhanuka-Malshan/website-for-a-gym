@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --main-color: #047491;
+    --black:#13131a;
+    --bg:#010103;
+    --boder:.1rem solid rgba(255, 255, 255, .3);
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--black);
+    background:url(../Images/login-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.row .box{
+    margin-top: 110px;
+    width: 600px;
+    height: 367px;
+    border-radius: 50px 5px;
+}
+
+
+form{
+    inset: 2px;
+    border-radius: 50px 5px;
+    background: #010a11af;
+    border: 2px solid rgba(255, 255, 255, 0.267);
+    z-index: 2;
+    padding: 30px 0px;
+    padding-right: 20px;
+    }
+
+form .head p{
+    font-weight: 500;
+    text-transform: none;
+    font-size: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+    margin-top: -2rem;
+}
+
+.inputBox{
+    position: relative;
+    width: 3000px;
+    margin: 10px 0px 0px 30px;
+   
+}
+.inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 15px 10px 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    letter-spacing: 0.05rem;
+    color: #ffffff;
+    z-index: 10;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin: 2rem;
+}
+
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px 10px 10px;
+    font-size: 1.8rem;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: 0.05rem;
+    transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+{
+    color: var(--main-color); 
+    transform: translateX(-10px) translateY(-30px);
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+ .inputBox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--main-color);
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+ }
+
+ .inputBox input:valid ~ i,
+ .inputBox input:focus ~ i
+ {
+    height: 40px;
+ }
+
+
+.email{
+    text-transform: none;
+ }
+
+
+
+
+
+ /* Password Field *//* Password Field *//* Password Field */
+ /* Password Field *//* Password Field *//* Password Field */
+ /* Password Field *//* Password Field *//* Password Field */
+ /* Password Field *//* Password Field *//* Password Field */
+
+
+.inputBox2{
+    position: relative;
+    width: 3000px;
+    margin: 10px 0px 0px 30px;
+    display: flex;
+    align-items: center;
+   
+}
+.inputBox2 input{
+    position: relative;
+    width: 100%;
+    padding: 15px 10px 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    letter-spacing: 0.05rem;
+    color: #ffffff;
+    z-index: 10;
+    text-transform: none;
+}
+
+
+.inputBox2 span{
+    position: absolute;
+    left: 0;
+    padding: 10px 10px 10px;
+    font-size: 2rem;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: 0.05rem;
+    transition: 0.5s;
+}
+
+.inputBox2 input:valid ~ span,
+.inputBox2 input:focus ~ span
+{
+    color: var(--main-color); 
+    transform: translateX(-10px) translateY(-30px);
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+ .inputBox2 i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--main-color);
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+ }
+
+ .inputBox2 input:valid ~ i,
+ .inputBox2 input:focus ~ i
+ {
+    height: 40px;
+ }
+
+.inputBox2 img{
+    width: 30px;
+    z-index: 3;
+    margin-right: 10px;
+    margin-top: 9px;
+    cursor: pointer;
+}
+
+/* Password Field *//* Password Field *//* Password Field */
+ /* Password Field *//* Password Field *//* Password Field */
+ /* Password Field *//* Password Field *//* Password Field */
+ /* Password Field *//* Password Field *//* Password Field */
+
+
+
+.submit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+input[type="submit"]{
+    border: none;
+    outline: none;
+    padding: 8px 25px;
+    background: var(--main-color);
+    cursor: pointer;
+    border-radius: 60px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.submit p{
+    font-size: 2rem;
+    color: var(--main-color);
+    padding-left: rem;
+    text-transform: none;
+    
+}
+
+.submit a{
+    font-size: 2em;
+    color: #8f8f8f;
+    text-decoration: beige;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer section starts */
+
+
+.footer{
+    text-align: center;
+}
+
+.footer .share{
+    padding: 1rem;
+}
+
+.footer .share a{
+    background-color: var(--bg);
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--boder);
+    margin: .3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover{
+    background-color: var(--main-color);
+    color: var(--bg);
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+.footer .links a{
+    padding: .7rem 2rem;
+    color: #fff;
+    border: var(--boder);
+    font-size: 1.5rem;
+    background-color: var(--bg);
+}
+
+.footer .links a:hover{
+    font-size: 1.6rem;
+    background-color: var(--main-color);
+}
+
+.footer .credit{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+.footer .credit span{
+    color: var(--main-color);
+    font-weight: bolder;
+} 
+/* footer section ends*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:925px){
+    section{
+        padding: 2rem;
+    }
+
+    .row .box{
+        margin-top: 110px;
+        width: 480px;
+        height: 320px;
+        border-radius: 50px 5px;
+    }
+
+}
+
+@media (max-width:500px){
+    section{
+        padding: 2rem;
+    }
+
+    .row .box{
+        margin-top: 110px;
+        width: 450px;
+        height: 320px;
+        border-radius: 50px 5px;
+    }
+    .checkBox{
+        margin-left: 5rem;
+        display: flex;
+    }
+
+    .footer{
+        padding-top: 5rem;
+        text-align: center;
+    }
+    
+}
